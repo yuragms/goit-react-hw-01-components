@@ -23,33 +23,32 @@
 // }
 
 // export default App;
-import Painting from './components/Painting';
-import paintings from './paintings.json';
+// import PaintingList from './components/PaintingList';
+// import paintings from './paintings.json';
+// import ColorPicker from './components/ColorPicker/ColorPicker';
+// import Alert from './components/Alert/Alert';
+import Box from './components/Box/Box';
+// const colorPickerOptions = [
+//   { label: 'red', color: '#F44336' },
+//   { label: 'green', color: '#4CAF50' },
+//   { label: 'blue', color: '#2196F3' },
+//   { label: 'grey', color: '#607D8B' },
+//   { label: 'pink', color: '#E91E63' },
+//   { label: 'indigo', color: '#3F51B5' },
+// ];
 
 export default function App() {
   return (
     <div>
-      <Painting
-        url={paintings[0].url}
-        title={paintings[0].title}
-        author={paintings[0].author.tag}
-        profileUrl={paintings[0].author.url}
-        price={paintings[0].price}
-      />
-      <Painting
-        url={paintings[1].url}
-        title={paintings[1].title}
-        author={paintings[1].author.tag}
-        profileUrl={paintings[1].author.url}
-        price={paintings[1].price}
-      />
-      <Painting
-        url={paintings[2].url}
-        title={paintings[2].title}
-        author={paintings[2].author.tag}
-        profileUrl={paintings[2].author.url}
-        price={paintings[2].price}
-      />
+      <Box type="small" classNames="big red" />
+      <Box type="medium" />
+      <Box type="large" />
+
+      {/* <Alert text="Шеф все пропало!" type="success"/>
+      <Alert text="Шеф все пропало!" type="warning"/>
+      <Alert text="Шеф все пропало!" type="error"/> */}
+      {/* <PaintingList items={paintings}  /> */}
+      {/* <ColorPicker options={colorPickerOptions}/> */}
     </div>
   );
 }
